@@ -1,0 +1,51 @@
+.header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100vw;
+  background: rgba(51, 51, 51, 0.84);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all ease .5s;
+}
+
+.header:hover{
+  background: rgba(51, 51, 51);
+}
+
+.menu__list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.menu__item{
+  border-bottom: 1px solid transparent;
+  transition: all ease .5s;
+}
+
+.menu__item:hover{
+  border-bottom: 1px solid #fff;
+
+}
+
+
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user__logo{
+  width: 45px;
+  height: 45px;
+  background: #9b9b9b;
+  border-radius: 50%;
+  margin-right: 5px;
+}

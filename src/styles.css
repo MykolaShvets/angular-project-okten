@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #4a4a4a;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,11 @@
+<app-movie-genres class="genres__menu"></app-movie-genres>
+<div class="movies__container">
+  <app-movie-card *ngFor="let movie of movies" [movie]="movie"></app-movie-card>
+</div>
+<div class="pagination">
+  <button *ngIf="page !== 1"  (click)="changePg(1)">1</button>
+  <button *ngIf="page !== 1"  (click)="changePg(page - 1)" >Prev</button>
+  <p>{{page}}</p>
+  <button *ngIf="page !== 500" (click)="changePg(page + 1)">Next</button>
+  <button  *ngIf="page !== 500" (click)="changePg(500)">500</button>
+</div>

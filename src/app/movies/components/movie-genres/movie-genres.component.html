@@ -1,0 +1,9 @@
+<ul class="genres__list">
+  <li>
+    <a routerLink="/movies">All</a>
+  </li>
+  <li *ngFor="let genre of movieGenres">
+    <a routerLink="/movies/genre/{{genre.id}}">{{genre.name}}</a>
+  </li>
+</ul>
+

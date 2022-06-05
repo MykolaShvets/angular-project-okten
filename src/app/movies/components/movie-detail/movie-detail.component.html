@@ -1,0 +1,27 @@
+<div class="movie-detail__container">
+  <img src="{{imgAPI}}{{currentMovie.poster_path}}" alt="{{currentMovie.title}}">
+  <div class="movie__info">
+    <h2 class="movie__title">{{currentMovie.title}}</h2>
+    <p class="movie__original-title">{{currentMovie.original_title}}</p>
+    <p class="movie__tagline">{{currentMovie.tagline}}</p>
+    <p class="movie__overview">{{currentMovie.overview}}</p>
+    <div class="movie__genres">
+      <h3>Genres: </h3>
+      <p *ngFor="let genre of currentMovie.genres">
+        {{genre.name}};
+      </p>
+    </div>
+    <div class="movie__companies">
+      <h3>Production companies: </h3>
+      <p *ngFor="let company of currentMovie.production_companies">
+        {{company.name}};
+      </p>
+    </div>
+    <div class="movie__countries">
+      <h3>Production countries: </h3>
+      <p *ngFor="let country of currentMovie.production_countries">
+        {{country.name}};
+      </p>
+    </div>
+  </div>
+</div>
