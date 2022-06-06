@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {
   Router, Resolve,
   RouterStateSnapshot,
   ActivatedRouteSnapshot
 } from '@angular/router';
-import { Observable, of } from 'rxjs';
-import {IMovieGenre} from "../interfaces/movie-genre-interface";
+import {Observable, of} from 'rxjs';
+
+import {IMovieGenre} from "../interfaces";
 import {MovieService} from "./movie.service";
 
 @Injectable({

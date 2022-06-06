@@ -1,6 +1,6 @@
 import {IMovieGenre} from "./movie-genre-interface";
 
-export interface IMovie{
+export interface IMovie {
   adult: boolean;
   backdrop_path: string | null;
   belongs_to_collection?: null | object;
@@ -16,7 +16,6 @@ export interface IMovie{
   popularity: number;
   poster_path: string | null;
   production_companies?: IMovieProdComp[];
-  production_countries?: IMovieProdCountries[];
   release_date: string;
   revenue?: number;
   runtime?: number;
@@ -43,7 +42,7 @@ export interface IMovieProdComp {
 }
 
 
-export interface IMovieProdCountries{
+export interface IMovieProdCountries {
   iso_3166_1: string;
   name: string;
 }

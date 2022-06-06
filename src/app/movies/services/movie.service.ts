@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-
-import {IMovieList} from "../interfaces/movie-list-interface";
-import {apiKey, urls} from "../../constants/urls";
-import {IMovie} from "../interfaces/movie-interface";
 import {Observable} from "rxjs";
-import {IMovieGenre} from "../interfaces/movie-genre-interface";
+
+import {IMovieList, IMovie, IMovieGenre} from "../interfaces";
+import {apiKey, urls} from "../../constants";
 
 @Injectable({
   providedIn: 'root'

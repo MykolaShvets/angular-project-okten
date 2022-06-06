@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {
   Router, Resolve,
   RouterStateSnapshot,
   ActivatedRouteSnapshot
 } from '@angular/router';
-import { Observable, of } from 'rxjs';
-import {IMovieList} from "../movies/interfaces/movie-list-interface";
+import {Observable, of} from 'rxjs';
+
+import {IMovieList} from "../movies/interfaces";
 import {HomePageService} from "./home-page.service";
 
 @Injectable({

@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {
   Router, Resolve,
   RouterStateSnapshot,
   ActivatedRouteSnapshot
 } from '@angular/router';
-import { Observable, of } from 'rxjs';
-import {IMovie} from "../interfaces/movie-interface";
+import {Observable, of} from 'rxjs';
+
+import {IMovie} from "../interfaces";
 import {MovieService} from "./movie.service";
 
 @Injectable({
@@ -18,7 +19,7 @@ export class MovieDetailResolver implements Resolve<IMovie> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<IMovie> | Promise<IMovie> | IMovie {
     const id = route.params['movieId'];
-   return this.movieService.getById(id);
+    return this.movieService.getById(id);
   }
 
 }

@@ -5,7 +5,8 @@ import {
   ActivatedRouteSnapshot
 } from '@angular/router';
 import {Observable, of} from 'rxjs';
-import {IMovieList} from "../interfaces/movie-list-interface";
+
+import {IMovieList} from "../interfaces";
 import {MovieService} from "./movie.service";
 import {DataService} from "./data.service";
 
@@ -23,8 +24,8 @@ export class MoviesResolver implements Resolve<IMovieList> {
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<IMovieList> | Promise<IMovieList> | IMovieList {
     const genreId = route.params['genreId']
     this.data.page.subscribe(value => this.page = value)
-    if(!genreId){
-     return this.movieService.getAll(this.page)
+    if (!genreId) {
+      return this.movieService.getAll(this.page)
     }
     return this.movieService.getByGenre(genreId, this.page)
   }

@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {IMovie} from "../../interfaces/movie-interface";
-import {imgAPI} from "../../../constants/urls";
-import {DataService} from "../../services/data.service";
-import {IMovieGenre} from "../../interfaces/movie-genre-interface";
+
+import {IMovie, IMovieGenre} from "../../interfaces";
+import {imgAPI} from "../../../constants";
+import {DataService} from "../../services";
 
 @Component({
   selector: 'app-movie-card',
@@ -27,5 +27,4 @@ export class MovieCardComponent implements OnInit {
       })
     })
   }
-
 }

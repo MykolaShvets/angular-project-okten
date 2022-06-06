@@ -1,9 +1,8 @@
-import {Component, DoCheck, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {IMovie} from "../../interfaces/movie-interface";
-import {IMovieGenre} from "../../interfaces/movie-genre-interface";
-import {DataService} from "../../services/data.service";
-import {MovieService} from "../../services/movie.service";
+
+import {IMovie, IMovieGenre} from "../../interfaces";
+import {DataService, MovieService} from "../../services";
 
 @Component({
   selector: 'app-movies',

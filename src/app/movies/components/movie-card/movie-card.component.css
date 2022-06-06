@@ -1,4 +1,4 @@
-.movie-card__body{
+.movie-card__body {
   width: 300px;
   height: 420px;
   border-radius: 50px;
@@ -11,11 +11,11 @@
   box-shadow: 0 0 80px #252525;
 }
 
-.movie-card__poster{
+.movie-card__poster {
   width: 300px;
 }
 
-.movie-card__txt{
+.movie-card__txt {
   position: absolute;
   z-index: 1;
   top: 300px;
@@ -30,7 +30,7 @@
   justify-content: center;
 }
 
-.movie-card__genres{
+.movie-card__genres {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +38,8 @@
   margin-top: 15px;
   flex-wrap: wrap;
 }
-.movie-card__genres > p{
+
+.movie-card__genres > p {
   padding: 5px;
   background: rgba(232, 196, 2, 0.49);
   border-radius: 10px;

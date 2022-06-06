@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 
-import {IMovieGenre} from "../../interfaces/movie-genre-interface";
-import {DataService} from "../../services/data.service";
+import {IMovieGenre} from "../../interfaces";
+import {DataService} from "../../services";
 
 @Component({
   selector: 'app-movie-genres',
@@ -13,11 +13,12 @@ export class MovieGenresComponent implements OnInit {
 
   movieGenres: IMovieGenre[];
 
-  constructor(private activatedRoute: ActivatedRoute, private data: DataService) { }
+  constructor(private activatedRoute: ActivatedRoute, private data: DataService) {
+  }
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(({genres}) => {
-      this.movieGenres = genres.genres ;
+      this.movieGenres = genres.genres;
       this.data.genres.next(genres.genres);
     })
   }

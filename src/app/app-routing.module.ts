@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {MainLayoutComponent} from "./layouts/main-layout/main-layout.component";
-import {HomePageComponent} from "./components/home-page/home-page.component";
-import {UpcomingResolver} from "./services/upcoming.resolver";
-import {TopRatedResolver} from "./services/top-rated.resolver";
+
+import {MainLayoutComponent} from "./layouts";
+import {HomePageComponent} from "./components";
+import {UpcomingResolver, TopRatedResolver} from "./services";
 
 const routes: Routes = [
   {path: '', component: MainLayoutComponent, children:[

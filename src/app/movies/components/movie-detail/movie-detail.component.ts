@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {IMovie} from "../../interfaces/movie-interface";
-import {imgAPI} from "../../../constants/urls";
+
+import {IMovie} from "../../interfaces";
+import {imgAPI} from "../../../constants";
 
 @Component({
   selector: 'app-movie-detail',
@@ -13,7 +14,8 @@ export class MovieDetailComponent implements OnInit {
   currentMovie: IMovie;
   imgAPI = imgAPI
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(({moviesDetail}) => {

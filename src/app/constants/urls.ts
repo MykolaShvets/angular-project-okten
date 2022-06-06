@@ -6,4 +6,4 @@ export const urls = {
   allGenres: `${API}/genre/movie/list${apiKey}`,
   allMovies: `${API}/discover/movie${apiKey}`,
   singleMovie: `${API}/movie`
-}
+};

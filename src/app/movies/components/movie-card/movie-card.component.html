@@ -3,7 +3,7 @@
     <img class="movie-card__poster" src="{{imgApi}}{{movie.poster_path}}" alt="{{movie.title}}">
     <div class="movie-card__txt">
       <p>{{movie.title}}</p>
-      <div class="movie-card__genres" >
+      <div class="movie-card__genres">
         <p *ngFor="let genre of currentGenres">{{genre.name}}</p>
       </div>
     </div>

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {IMovie} from "../../movies/interfaces/movie-interface";
+
+import {IMovie} from "../../movies/interfaces";
 
 @Component({
   selector: 'app-home-page',
@@ -12,7 +13,8 @@ export class HomePageComponent implements OnInit {
   upcoming: IMovie[];
   topRated: IMovie[];
 
-  constructor(private activatedRoute: ActivatedRoute) { }
+  constructor(private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(({upcoming, topRated}) => {
@@ -20,5 +22,4 @@ export class HomePageComponent implements OnInit {
       this.topRated = topRated.results;
     })
   }
-
 }
