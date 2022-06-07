@@ -16,6 +16,7 @@ export interface IMovie {
   popularity: number;
   poster_path: string | null;
   production_companies?: IMovieProdComp[];
+  production_countries?: IMovieProdCountries[];
   release_date: string;
   revenue?: number;
   runtime?: number;
