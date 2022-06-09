@@ -6,6 +6,9 @@
       <div class="movie-card__genres">
         <p *ngFor="let genre of currentGenres">{{genre.name}}</p>
       </div>
+      <div class="rating">
+        <ngb-rating [max]="10" [(rate)]="rating" [readonly]="true"></ngb-rating>
+      </div>
     </div>
   </a>
 </div>

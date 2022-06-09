@@ -5,6 +5,10 @@
     <p class="movie__original-title">{{currentMovie.original_title}}</p>
     <p class="movie__tagline">{{currentMovie.tagline}}</p>
     <p class="movie__overview">{{currentMovie.overview}}</p>
+    <p>Rating:
+      <ngb-rating [max]="10" [rate]="currentMovie.vote_average" [readonly]="true"></ngb-rating>
+      {{currentMovie.vote_average}}
+    </p>
     <div class="movie__genres">
       <h3>Genres: </h3>
       <p *ngFor="let genre of currentMovie.genres">

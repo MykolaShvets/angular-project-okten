@@ -8,6 +8,7 @@ import {AppComponent} from './app.component';
 import {MainLayoutComponent} from './layouts';
 import {MoviesModule} from "./movies/movies.module";
 import {HomePageComponent, HeaderComponent, SearchFormComponent, SearchResultsComponent} from './components';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {HomePageComponent, HeaderComponent, SearchFormComponent, SearchResultsCo
         AppRoutingModule,
         HttpClientModule,
         MoviesModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        NgbModule
     ],
   providers: [],
   bootstrap: [AppComponent]

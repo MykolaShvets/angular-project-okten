@@ -19,10 +19,10 @@
 .movie-card__txt {
   position: absolute;
   z-index: 1;
-  top: 300px;
+  top: 250px;
   background: rgba(74, 74, 74, 0.6);
   width: 300px;
-  height: 120px;
+  height: 170px;
   text-align: center;
   font-weight: 600;
   display: flex;
@@ -44,4 +44,9 @@
   padding: 5px;
   background: rgba(232, 196, 2, 0.49);
   border-radius: 10px;
+}
+
+.rating{
+  font-size: 24px;
+  color: gold;
 }

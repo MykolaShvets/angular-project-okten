@@ -15,11 +15,13 @@ export class MovieCardComponent implements OnInit {
   movie: IMovie;
   imgApi = imgAPI;
   currentGenres: IMovieGenre[] = [];
+  rating: number;
 
   constructor(private data: DataService) {
   }
 
   ngOnInit(): void {
+    this.rating = this.movie.vote_average;
     this.data.genres.subscribe(value => {
       this.movie.genre_ids?.map(genre_id => {
         value.filter(genre => genre.id === genre_id)
