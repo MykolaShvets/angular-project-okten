@@ -5,5 +5,6 @@ export const {API, apiKey, imgAPI} = environment;
 export const urls = {
   allGenres: `${API}/genre/movie/list${apiKey}`,
   allMovies: `${API}/discover/movie${apiKey}`,
-  singleMovie: `${API}/movie`
+  singleMovie: `${API}/movie`,
+  searchMovie: `${API}/search/movie${apiKey}`
 };

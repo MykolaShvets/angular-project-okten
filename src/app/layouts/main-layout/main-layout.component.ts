@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainLayoutComponent implements OnInit {
 
+  theme: string = 'body__dark';
+  isDark: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  changeTheme() {
+    this.isDark = !this.isDark
+    if(!this.isDark){
+     return this.theme = 'body__light'
+    }
+    return this.theme = 'body__dark'
+  }
 }

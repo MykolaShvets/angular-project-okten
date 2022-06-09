@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-around;
   transition: all ease .5s;
+  color: white;
 }
 
 .header:hover {

@@ -1,5 +1,10 @@
-<app-header></app-header>
-<div class="content">
-  <router-outlet></router-outlet>
+<div class="{{theme}}">
+  <app-header></app-header>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <button class="change__theme" (click)="changeTheme()">Change theme</button>
 </div>
+
 

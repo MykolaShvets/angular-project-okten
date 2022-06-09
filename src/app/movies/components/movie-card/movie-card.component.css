@@ -5,6 +5,7 @@
   overflow: hidden;
   position: relative;
   transition: all .8s;
+  color: white;
 }
 
 .movie-card__body:hover {
